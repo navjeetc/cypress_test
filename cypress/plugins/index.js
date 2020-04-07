@@ -18,4 +18,10 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  config.env = config.env || {}
+
+  config.env.NVBC_ADMIN_LOG_NAME = process.env.NVBC_ADMIN_LOG_NAME
+  config.env.NVBC_ADMIN_PASSWORD = process.env.NVBC_ADMIN_PASSWORD
+  
+  return config
 }

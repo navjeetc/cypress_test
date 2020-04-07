@@ -4,7 +4,8 @@
   "description": "cypress demo",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "cypress:open": "../../node_modules/.bin/cross-env FOO=42 BAR=baz CYPRESS_ping=123 ../../node_modules/.bin/cypress open"
   },
   "author": "Navjeet",
   "license": "ISC",
